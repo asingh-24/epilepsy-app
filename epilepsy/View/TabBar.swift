@@ -20,7 +20,7 @@ struct TabBar: View {
        
         
         TabView(selection: $current) {
-            Text("Diet Planning")
+            dietView()
                 .tag(0)
                 .tabItem {
                     Image("person")
@@ -29,7 +29,7 @@ struct TabBar: View {
     
         
             MeditationView(meditationVM: MeditationViewModel(meditation: Meditation.data))
-                .tag(0)
+                .tag(1)
                 .tabItem {
                     Image("person")
                     Text("Meditation")

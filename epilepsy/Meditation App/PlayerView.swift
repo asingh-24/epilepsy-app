@@ -12,6 +12,7 @@ struct PlayerView: View {
     var meditationVM: MeditationViewModel
     var isPreview: Bool = false
     @State private var value: Double = 0.0
+    @State private var isEditing: Bool = false
     @Environment(\.dismiss) var dismiss
     
     let timer = Timer
@@ -49,9 +50,18 @@ struct PlayerView: View {
                 if let player = audioManager.player {
                     VStack(spacing:5) {
                         //Playback timeline
-                        Slider(value: $value, in: 0...player.duration)
+                        Slider(value: $value, in: 0...player.duration) { editing in
+                            print("editing", editing)
+                            isEditing = editing
+                            if !editing {
+                                player.currentTime = value
+                                
+                
+                            }
+                            
+                        }
                             .accentColor(.white)
-                        
+                        //play back time
                         HStack {
                             Text("0:00")
                             Spacer()
@@ -97,7 +107,7 @@ struct PlayerView: View {
         } .onAppear() { audioManager.startPlayer(track: meditationVM.meditation.track)
         }
         .onReceive(timer) { _ in
-            guard let player = audioManager.player else {return}
+            guard let player = audioManager.player, !isEditing else {return}
             value = player.currentTime
         }
        

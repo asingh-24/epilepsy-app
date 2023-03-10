@@ -17,6 +17,7 @@
 		FB1FE90529BA55A100D405C4 /* PlaybackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE90429BA55A100D405C4 /* PlaybackControlButton.swift */; };
 		FB1FE90729BA761100D405C4 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE90629BA761000D405C4 /* MeditationViewModel.swift */; };
 		FBD063F929BACF1F000127F9 /* medmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBD063F829BACF1F000127F9 /* medmusic.mp3 */; };
+		FBD063FC29BAE3AD000127F9 /* dietView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD063FB29BAE3AD000127F9 /* dietView.swift */; };
 		FBFB468F29BA7E2B00BC97F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB468E29BA7E2B00BC97F6 /* Extensions.swift */; };
 		FBFB469229BA82E800BC97F6 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB469129BA82E800BC97F6 /* AudioManager.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		FB1FE90429BA55A100D405C4 /* PlaybackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButton.swift; sourceTree = "<group>"; };
 		FB1FE90629BA761000D405C4 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
 		FBD063F829BACF1F000127F9 /* medmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = medmusic.mp3; path = ../../../Downloads/medmusic.mp3; sourceTree = "<group>"; };
+		FBD063FB29BAE3AD000127F9 /* dietView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dietView.swift; sourceTree = "<group>"; };
 		FBED191B29BA932A0062B8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FBFB468E29BA7E2B00BC97F6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FBFB469129BA82E800BC97F6 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FBD063FA29BAE393000127F9 /* DietApp */ = {
+			isa = PBXGroup;
+			children = (
+				FBD063FB29BAE3AD000127F9 /* dietView.swift */,
+			);
+			path = DietApp;
+			sourceTree = "<group>";
+		};
 		FBFB469029BA82AB00BC97F6 /* Meditation App */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 				FB1FE90029BA2D9B00D405C4 /* MeditationView.swift */,
 				FB1FE90429BA55A100D405C4 /* PlaybackControlButton.swift */,
 				FBFB469129BA82E800BC97F6 /* AudioManager.swift */,
+				FBD063FA29BAE393000127F9 /* DietApp */,
 			);
 			path = "Meditation App";
 			sourceTree = "<group>";
@@ -180,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD063FC29BAE3AD000127F9 /* dietView.swift in Sources */,
 				FB1FE90729BA761100D405C4 /* MeditationViewModel.swift in Sources */,
 				FB1FE90129BA2D9B00D405C4 /* MeditationView.swift in Sources */,
 				FB1FE8FF29BA17A400D405C4 /* TabBar.swift in Sources */,
