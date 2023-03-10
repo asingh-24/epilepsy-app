@@ -23,16 +23,29 @@ struct dietView: View {
                         .font(.title).fontWeight(.bold)
                     Text("A good diet is the first step to seizure control. However, consult your doctor before following the suggestions below.")
                         .padding(.bottom)
-                    Text("In this app, we recommend you follow  a ketogenic diet, which consists of high-fat, low-carb foods.")
+                    Text("In this app, we recommend you follow  a ketogenic diet, which consists of high-fat, low-carb foods. Below are a few example meals you can follow (click on each image).")
+                        .padding(.horizontal)
                 }.padding().background(Rectangle().foregroundColor(.white))
 
+                
                 VStack(){
                     Text("Example Day 1: American Meals")
                         .fontWeight(.bold)
-                    Image("burger").resizable().aspectRatio(contentMode: .fit).cornerRadius(15)
-                }.padding().background(Rectangle().foregroundColor(.white)).shadow(radius:20)
+                    
+                    Button {
+                        print("Success")
+                    } label: {
+                        Image("burger").resizable().aspectRatio(contentMode: .fit).cornerRadius(15).shadow(radius:10)
+                    }
+
+                    
+                    
+                }.padding().background(Rectangle().foregroundColor(.white))
+                
+                
                 Spacer()
 
+                
             }.padding()
 
         }
