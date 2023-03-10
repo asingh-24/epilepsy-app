@@ -14,6 +14,11 @@
 		FB1FE8FF29BA17A400D405C4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE8FE29BA17A400D405C4 /* TabBar.swift */; };
 		FB1FE90129BA2D9B00D405C4 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE90029BA2D9B00D405C4 /* MeditationView.swift */; };
 		FB1FE90329BA401700D405C4 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE90229BA401700D405C4 /* PlayerView.swift */; };
+		FB1FE90529BA55A100D405C4 /* PlaybackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE90429BA55A100D405C4 /* PlaybackControlButton.swift */; };
+		FB1FE90729BA761100D405C4 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE90629BA761000D405C4 /* MeditationViewModel.swift */; };
+		FBD063F929BACF1F000127F9 /* medmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBD063F829BACF1F000127F9 /* medmusic.mp3 */; };
+		FBFB468F29BA7E2B00BC97F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB468E29BA7E2B00BC97F6 /* Extensions.swift */; };
+		FBFB469229BA82E800BC97F6 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB469129BA82E800BC97F6 /* AudioManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,12 @@
 		FB1FE8FE29BA17A400D405C4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		FB1FE90029BA2D9B00D405C4 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		FB1FE90229BA401700D405C4 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		FB1FE90429BA55A100D405C4 /* PlaybackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButton.swift; sourceTree = "<group>"; };
+		FB1FE90629BA761000D405C4 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
+		FBD063F829BACF1F000127F9 /* medmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = medmusic.mp3; path = ../../../Downloads/medmusic.mp3; sourceTree = "<group>"; };
+		FBED191B29BA932A0062B8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FBFB468E29BA7E2B00BC97F6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FBFB469129BA82E800BC97F6 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +68,13 @@
 		FB1FE8EC29BA162900D405C4 /* epilepsy */ = {
 			isa = PBXGroup;
 			children = (
+				FBED191B29BA932A0062B8BC /* Info.plist */,
 				FB1FE8FB29BA16C700D405C4 /* View */,
 				FB1FE8ED29BA162900D405C4 /* epilepsyApp.swift */,
 				FB1FE8EF29BA162900D405C4 /* ContentView.swift */,
-				FB1FE90029BA2D9B00D405C4 /* MeditationView.swift */,
-				FB1FE90229BA401700D405C4 /* PlayerView.swift */,
+				FBFB469029BA82AB00BC97F6 /* Meditation App */,
 				FB1FE8F129BA162A00D405C4 /* Assets.xcassets */,
+				FBD063F829BACF1F000127F9 /* medmusic.mp3 */,
 				FB1FE8F329BA162A00D405C4 /* Preview Content */,
 			);
 			path = epilepsy;
@@ -82,6 +94,19 @@
 				FB1FE8FE29BA17A400D405C4 /* TabBar.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FBFB469029BA82AB00BC97F6 /* Meditation App */ = {
+			isa = PBXGroup;
+			children = (
+				FBFB468E29BA7E2B00BC97F6 /* Extensions.swift */,
+				FB1FE90629BA761000D405C4 /* MeditationViewModel.swift */,
+				FB1FE90229BA401700D405C4 /* PlayerView.swift */,
+				FB1FE90029BA2D9B00D405C4 /* MeditationView.swift */,
+				FB1FE90429BA55A100D405C4 /* PlaybackControlButton.swift */,
+				FBFB469129BA82E800BC97F6 /* AudioManager.swift */,
+			);
+			path = "Meditation App";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD063F929BACF1F000127F9 /* medmusic.mp3 in Resources */,
 				FB1FE8F529BA162A00D405C4 /* Preview Assets.xcassets in Resources */,
 				FB1FE8F229BA162A00D405C4 /* Assets.xcassets in Resources */,
 			);
@@ -154,10 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB1FE90729BA761100D405C4 /* MeditationViewModel.swift in Sources */,
 				FB1FE90129BA2D9B00D405C4 /* MeditationView.swift in Sources */,
 				FB1FE8FF29BA17A400D405C4 /* TabBar.swift in Sources */,
+				FBFB468F29BA7E2B00BC97F6 /* Extensions.swift in Sources */,
 				FB1FE8F029BA162900D405C4 /* ContentView.swift in Sources */,
 				FB1FE90329BA401700D405C4 /* PlayerView.swift in Sources */,
+				FBFB469229BA82E800BC97F6 /* AudioManager.swift in Sources */,
+				FB1FE90529BA55A100D405C4 /* PlaybackControlButton.swift in Sources */,
 				FB1FE8EE29BA162900D405C4 /* epilepsyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +319,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"epilepsy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = epilepsy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -317,6 +348,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"epilepsy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = epilepsy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

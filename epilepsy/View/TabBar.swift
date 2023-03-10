@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabBar: View {
+     let meditationVM = MeditationViewModel(meditation: Meditation.data)
     
     init() {
         UITabBar.appearance().backgroundColor = UIColor(red: 24/255, green: 23/255, blue: 22/255, alpha: 1)
@@ -27,7 +28,7 @@ struct TabBar: View {
                 }
     
         
-            MeditationView()
+            MeditationView(meditationVM: MeditationViewModel(meditation: Meditation.data))
                 .tag(0)
                 .tabItem {
                     Image("person")
