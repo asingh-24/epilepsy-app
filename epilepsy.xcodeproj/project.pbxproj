@@ -70,6 +70,7 @@
 		FB1FE8EC29BA162900D405C4 /* epilepsy */ = {
 			isa = PBXGroup;
 			children = (
+				FBD063FA29BAE393000127F9 /* DietApp */,
 				FBED191B29BA932A0062B8BC /* Info.plist */,
 				FB1FE8FB29BA16C700D405C4 /* View */,
 				FB1FE8ED29BA162900D405C4 /* epilepsyApp.swift */,
@@ -115,7 +116,6 @@
 				FB1FE90029BA2D9B00D405C4 /* MeditationView.swift */,
 				FB1FE90429BA55A100D405C4 /* PlaybackControlButton.swift */,
 				FBFB469129BA82E800BC97F6 /* AudioManager.swift */,
-				FBD063FA29BAE393000127F9 /* DietApp */,
 			);
 			path = "Meditation App";
 			sourceTree = "<group>";
