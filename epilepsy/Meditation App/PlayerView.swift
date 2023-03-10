@@ -85,8 +85,6 @@ struct PlayerView: View {
                         //play/pause
                         PlaybackControlButton(systemName: "play.circle.fill", fontSize: 44) {
                             
-                        }.onTapGesture {
-                            audioManager.startPlayer(track: meditationVM.meditation.track)
                         }
                         Spacer()
                         //forward
