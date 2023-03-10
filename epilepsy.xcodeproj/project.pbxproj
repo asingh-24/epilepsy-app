@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21E3A84B29BAEC440094A929 /* medmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 21E3A84A29BAEC440094A929 /* medmusic.mp3 */; };
 		FB1FE8EE29BA162900D405C4 /* epilepsyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE8ED29BA162900D405C4 /* epilepsyApp.swift */; };
 		FB1FE8F029BA162900D405C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE8EF29BA162900D405C4 /* ContentView.swift */; };
 		FB1FE8F229BA162A00D405C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1FE8F129BA162A00D405C4 /* Assets.xcassets */; };
@@ -16,13 +17,14 @@
 		FB1FE90329BA401700D405C4 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE90229BA401700D405C4 /* PlayerView.swift */; };
 		FB1FE90529BA55A100D405C4 /* PlaybackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE90429BA55A100D405C4 /* PlaybackControlButton.swift */; };
 		FB1FE90729BA761100D405C4 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE90629BA761000D405C4 /* MeditationViewModel.swift */; };
-		FBD063F929BACF1F000127F9 /* medmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBD063F829BACF1F000127F9 /* medmusic.mp3 */; };
 		FBD063FC29BAE3AD000127F9 /* dietView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD063FB29BAE3AD000127F9 /* dietView.swift */; };
 		FBFB468F29BA7E2B00BC97F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB468E29BA7E2B00BC97F6 /* Extensions.swift */; };
 		FBFB469229BA82E800BC97F6 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB469129BA82E800BC97F6 /* AudioManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21E3A84A29BAEC440094A929 /* medmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = medmusic.mp3; sourceTree = "<group>"; };
+		21E3A84C29BB66C30094A929 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB1FE8EA29BA162900D405C4 /* epilepsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epilepsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1FE8ED29BA162900D405C4 /* epilepsyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epilepsyApp.swift; sourceTree = "<group>"; };
 		FB1FE8EF29BA162900D405C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,9 +35,7 @@
 		FB1FE90229BA401700D405C4 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		FB1FE90429BA55A100D405C4 /* PlaybackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButton.swift; sourceTree = "<group>"; };
 		FB1FE90629BA761000D405C4 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
-		FBD063F829BACF1F000127F9 /* medmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = medmusic.mp3; path = ../../../Downloads/medmusic.mp3; sourceTree = "<group>"; };
 		FBD063FB29BAE3AD000127F9 /* dietView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dietView.swift; sourceTree = "<group>"; };
-		FBED191B29BA932A0062B8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FBFB468E29BA7E2B00BC97F6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FBFB469129BA82E800BC97F6 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,14 +70,14 @@
 		FB1FE8EC29BA162900D405C4 /* epilepsy */ = {
 			isa = PBXGroup;
 			children = (
+				21E3A84C29BB66C30094A929 /* Info.plist */,
 				FBD063FA29BAE393000127F9 /* DietApp */,
-				FBED191B29BA932A0062B8BC /* Info.plist */,
 				FB1FE8FB29BA16C700D405C4 /* View */,
 				FB1FE8ED29BA162900D405C4 /* epilepsyApp.swift */,
 				FB1FE8EF29BA162900D405C4 /* ContentView.swift */,
 				FBFB469029BA82AB00BC97F6 /* Meditation App */,
 				FB1FE8F129BA162A00D405C4 /* Assets.xcassets */,
-				FBD063F829BACF1F000127F9 /* medmusic.mp3 */,
+				21E3A84A29BAEC440094A929 /* medmusic.mp3 */,
 				FB1FE8F329BA162A00D405C4 /* Preview Content */,
 			);
 			path = epilepsy;
@@ -178,8 +178,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD063F929BACF1F000127F9 /* medmusic.mp3 in Resources */,
 				FB1FE8F529BA162A00D405C4 /* Preview Assets.xcassets in Resources */,
+				21E3A84B29BAEC440094A929 /* medmusic.mp3 in Resources */,
 				FB1FE8F229BA162A00D405C4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
