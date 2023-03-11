@@ -46,7 +46,7 @@ struct MeditationView: View {
                         .background(.white)
                 }
                 //Description
-                Text("Specially chosen audios that help calm those with epilepsy and reduce the likelihood of seizures.")
+                Text("Specially chosen audios that help reduce the likelihood of seizures.")
                 
                 Spacer()
                 
