@@ -4,7 +4,6 @@
 //
 //  Created by Savir Singh on 3/9/23.
 //
-
 import SwiftUI
 
 struct PlayerView: View {
