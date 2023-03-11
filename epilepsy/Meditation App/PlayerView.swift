@@ -4,7 +4,6 @@
 //
 //  Created by Savir Singh on 3/9/23.
 //
-
 import SwiftUI
 
 struct PlayerView: View {
@@ -30,6 +29,7 @@ struct PlayerView: View {
             VStack(spacing:32) {
                 HStack {
                     Button {
+                        audioManager.stop()
                         dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
@@ -63,9 +63,9 @@ struct PlayerView: View {
                             .accentColor(.white)
                         //play back time
                         HStack {
-                            Text("0:00")
+                            Text(DateComponentsFormatter.positional.string(from: player.currentTime) ?? "0:00")
                             Spacer()
-                            Text("30:00")
+                            Text(DateComponentsFormatter.positional.string(from: player.duration - player.currentTime) ?? "0:00")
                         }
                         .font(.caption)
                         .foregroundColor(.white)
@@ -73,28 +73,29 @@ struct PlayerView: View {
                     //playback control
                     HStack {
                         //Repeat button
-                        PlaybackControlButton(systemName: "repeat") {
-                            
+                        let color: Color = audioManager.isLooping ?.teal : .white
+                        PlaybackControlButton(systemName: "repeat", color: color) {
+                            audioManager.loop()
                         }
                         Spacer()
                         //Backward
                         PlaybackControlButton(systemName: "gobackward.10") {
-                            
+                            player.currentTime-=10
                         }
                         Spacer()
                         //play/pause
-                        PlaybackControlButton(systemName: "play.circle.fill", fontSize: 44) {
-                            
+                        PlaybackControlButton(systemName: player.isPlaying ? "pause.circle.fill" : "play.circle.fill", fontSize: 44) {
+                            audioManager.playPause()
                         }
                         Spacer()
                         //forward
                         PlaybackControlButton(systemName: "goforward.10") {
-                            
+                            player.currentTime+=10
                         }
                         Spacer()
                         //stop
                         PlaybackControlButton(systemName: "stop.fill") {
-                            
+                            audioManager.stop()
                         }
                         Spacer()
                     }

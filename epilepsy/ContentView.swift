@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     init() {
-        UITabBar.appearance().barTintColor = UIColor.green
-    }
+        UITabBar.appearance().backgroundColor = UIColor(red: 24/255, green: 23/255, blue: 22/255, alpha: 1)
+        }
     var body: some View {
         TabBar()
     }

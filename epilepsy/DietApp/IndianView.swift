@@ -1,13 +1,13 @@
 //
-//  AmericanView.swift
+//  IndianView.swift
 //  epilepsy
 //
-//  Created by Angad Singh on 3/10/23.
+//  Created by Angad Singh on 3/11/23.
 //
 
 import SwiftUI
 
-struct AmericanView: View {
+struct IndianView: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack{
@@ -30,56 +30,53 @@ struct AmericanView: View {
                 }.padding([.leading, .bottom, .trailing])
                 
                 
-                Text("Example Day 1: American Meal Plan").font(.title2).fontWeight(.bold).padding(.horizontal)
+                Text("Example Day 2: Indian Meal Plan").font(.title2).fontWeight(.bold).padding(.horizontal)
                 
                 //Breakfast
                 HStack{
                     VStack(alignment: .leading){
                         Text("Breakfast: ").font(.title3).fontWeight(.semibold)
-                        Text("Eggs (2)")
-                        Text("Bacon (1-2 slices)")
-                        Text("Butter (1.5 tbsp)")
-                        Text("Strawberries (1-2)")
-                             
+                        Text("Masala Omelette (2 eggs)")
+                        Text("Cheese (1 slice)")
+                                
                     }.padding(.leading)
                     
-                    Image("baconegg").resizable().scaledToFit().cornerRadius(15).padding(.horizontal)
+                    Image("masala").resizable().scaledToFit().cornerRadius(15).padding(.horizontal)
                     
                 }
                 //lunch
                 HStack{
                     VStack(alignment: .leading){
                         Text("Lunch: ").font(.title3).fontWeight(.semibold)
-                        Text("Hamburger patty (1)")
-                        Text("Cheese (1 slice)")
-                        Text("Veggies (Handful)")
-                        
+                        Text("Paneer Tikka (3-4 pieces)")
+                        Text("Cauliflower palau (0.5 cup)")
+
                              
                     }.padding(.leading)
                     
-                    Image("nobunburger").resizable().scaledToFit().cornerRadius(15).padding(.horizontal)
+                    Image("paneer").resizable().scaledToFit().cornerRadius(15).padding(.horizontal)
                     
                 }
                 //dinner
                 HStack{
                     VStack(alignment: .leading){
                         Text("Dinner:").font(.title3).fontWeight(.semibold)
-                        Text("Chicken Soup (1 cup)")
-                        Text("Brocolli (0.5 - 1 cup)")
+                        Text("Almond flour chapati (2)")
+                        Text("Tandoori Chicken (2 pieces)")
                     }.padding(.leading)
                     
-                    Image("soup").resizable().scaledToFit().cornerRadius(15).padding(.horizontal)
+                    Image("chicken").resizable().scaledToFit().cornerRadius(15).padding(.horizontal)
                         
                 }
                 //snack
                 HStack{
                     VStack(alignment: .leading){
                         Text("Snack:").font(.title3).fontWeight(.semibold)
-                        Text("Bluberries (handful)")
-                        Text("Greek yogurt (0.5 cup)")
+                        Text("Salad + Olive oil")
+                        Text("(Avocados, carrots, cucumbers, lettuce)")
                     }.padding(.leading)
                     
-                    Image("greeky").resizable().scaledToFit().cornerRadius(15).padding(.horizontal)
+                    Image("salad").resizable().scaledToFit().cornerRadius(15).padding(.horizontal)
                         
                 }
                 
@@ -90,8 +87,8 @@ struct AmericanView: View {
     }
 }
 
-struct AmericanView_Previews: PreviewProvider {
+struct IndianView_Previews: PreviewProvider {
     static var previews: some View {
-        AmericanView()
+        IndianView()
     }
 }

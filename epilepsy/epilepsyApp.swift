@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct epilepsyApp: App {
+    
     @StateObject var audioManager = AudioManager()
     var body: some Scene {
         WindowGroup {
