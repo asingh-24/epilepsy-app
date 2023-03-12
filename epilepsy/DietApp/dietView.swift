@@ -21,7 +21,7 @@ struct dietView: View {
         ZStack{
             (Color(red: 33/255, green: 90/255, blue: 119/255)).ignoresSafeArea()
 
-            ScrollView() {
+            ScrollView(.vertical) {
                 
                 VStack(alignment: .leading) {
                     

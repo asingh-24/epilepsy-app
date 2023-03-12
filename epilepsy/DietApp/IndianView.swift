@@ -74,7 +74,7 @@ struct IndianView: View {
                         Text("Snack:").font(.title3).fontWeight(.semibold)
                         Text("Salad + Olive oil")
                         Text("(Avocados, carrots, cucumbers, lettuce)")
-                    }.padding(.leading)
+                    }.padding(.horizontal)
                     
                     Image("salad").resizable().scaledToFit().cornerRadius(15).padding(.horizontal)
                         

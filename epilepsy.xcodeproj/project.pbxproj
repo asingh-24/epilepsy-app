@@ -11,6 +11,8 @@
 		21E3A84B29BAEC440094A929 /* medmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 21E3A84A29BAEC440094A929 /* medmusic.mp3 */; };
 		21E3A84F29BC01420094A929 /* AmericanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E3A84E29BC01420094A929 /* AmericanView.swift */; };
 		21E3A85129BCE2A00094A929 /* IndianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E3A85029BCE2A00094A929 /* IndianView.swift */; };
+		FB00262529BE30F800595EE0 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00262429BE30F800595EE0 /* ExerciseView.swift */; };
+		FB00262729BE69BD00595EE0 /* meditationMonday.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00262629BE69BD00595EE0 /* meditationMonday.swift */; };
 		FB1FE8EE29BA162900D405C4 /* epilepsyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE8ED29BA162900D405C4 /* epilepsyApp.swift */; };
 		FB1FE8F029BA162900D405C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FE8EF29BA162900D405C4 /* ContentView.swift */; };
 		FB1FE8F229BA162A00D405C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1FE8F129BA162A00D405C4 /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		21E3A84C29BB66C30094A929 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21E3A84E29BC01420094A929 /* AmericanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericanView.swift; sourceTree = "<group>"; };
 		21E3A85029BCE2A00094A929 /* IndianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndianView.swift; sourceTree = "<group>"; };
+		FB00262429BE30F800595EE0 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		FB00262629BE69BD00595EE0 /* meditationMonday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meditationMonday.swift; sourceTree = "<group>"; };
 		FB1FE8EA29BA162900D405C4 /* epilepsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epilepsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1FE8ED29BA162900D405C4 /* epilepsyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epilepsyApp.swift; sourceTree = "<group>"; };
 		FB1FE8EF29BA162900D405C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB00262329BE2E4200595EE0 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				FB00262429BE30F800595EE0 /* ExerciseView.swift */,
+				FB00262629BE69BD00595EE0 /* meditationMonday.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
 		FB1FE8E129BA162900D405C4 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +89,7 @@
 		FB1FE8EC29BA162900D405C4 /* epilepsy */ = {
 			isa = PBXGroup;
 			children = (
+				FB00262329BE2E4200595EE0 /* Exercise */,
 				21E3A84C29BB66C30094A929 /* Info.plist */,
 				FBD063FA29BAE393000127F9 /* DietApp */,
 				FB1FE8FB29BA16C700D405C4 /* View */,
@@ -210,8 +224,10 @@
 				FB1FE8F029BA162900D405C4 /* ContentView.swift in Sources */,
 				21E3A84F29BC01420094A929 /* AmericanView.swift in Sources */,
 				FB1FE90329BA401700D405C4 /* PlayerView.swift in Sources */,
+				FB00262729BE69BD00595EE0 /* meditationMonday.swift in Sources */,
 				FBFB469229BA82E800BC97F6 /* AudioManager.swift in Sources */,
 				FB1FE90529BA55A100D405C4 /* PlaybackControlButton.swift in Sources */,
+				FB00262529BE30F800595EE0 /* ExerciseView.swift in Sources */,
 				FB1FE8EE29BA162900D405C4 /* epilepsyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

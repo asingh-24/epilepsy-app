@@ -36,8 +36,8 @@ struct TabBar: View {
                 }
         
         
-            Text("Exercise")
-                .tag(0)
+            ExerciseView()
+                .tag(2)
                 .tabItem {
                     Image("person")
                     Text("Exercise")
